@@ -1,8 +1,10 @@
+import Image from 'next/image';
 import React from 'react';
-
+import logo from '@/assets/book.ico'
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+      <nav className='  bg-base-100 shadow-sm'>
+        <div className="navbar container mx-auto ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -22,7 +24,10 @@ const Navbar = () => {
         <li><a>Item 3</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <div className="flex gap-2 items-center" > 
+      Book Vibe
+    <Image src={logo} />
+    </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -44,6 +49,7 @@ const Navbar = () => {
     <button className="btn btn-error">Sign Up</button>
   </div>
 </div>
+</nav>
     );
 };
 

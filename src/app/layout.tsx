@@ -28,6 +28,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
+        
+       
         {children}
 
         <h1 className=" py-7 font-extrabold text-5xl bg-amber-400" >Footer</h1>
